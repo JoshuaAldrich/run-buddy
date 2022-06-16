@@ -10,14 +10,14 @@ body {
 }
 
 
-/* HEADER / NAV BAR STYLES START */
+/* HEADER / NAV BAR STYLES*/
 
 header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px 35px;
-  background-color: #39a6b2;
 }
 
 header h1 {
@@ -44,10 +44,6 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li {
-  display: inline;
-}
-
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
@@ -58,13 +54,13 @@ header nav ul li a {
 
 
 
-/* FOOTER STYLES START */
+/* FOOTER STYLES*/
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background: #fce138;
   padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -89,13 +85,14 @@ section {
   padding: 60px;
 }
 
-/* HERO STYLES START */
+/* HERO STYLES*/
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  position: relative;
-  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-cta {
@@ -117,12 +114,9 @@ section {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
+  color: #024e76;
   width: 40%;
   margin: 3.5%;
-  color: #024e76;
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
 }
 
 .hero-form h3 {
@@ -157,7 +151,7 @@ section {
 /* HERO STYLES END */
 
 
-/* SECTION TITLE STYLES START */
+/* SECTION TITLE STYLES*/
 .section-title {
   font-size: 55px;
   border-bottom: 3px solid;
@@ -181,18 +175,29 @@ section {
 
 .intro p {
   line-height: 1.7;
-  text-align: center;
   color: #39a6b2;
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
+  text-align: center;
 }
 /* WHAT YOU DO STYLES END */
 
 
-/* WHAT YOU DO STYLES START */
+/* WHAT YOU DO STYLES*/
 .steps { 
   background: #fce138;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .step h3 {
@@ -208,6 +213,19 @@ section {
   align-items: center;
 }
 
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
+}
+
 .step-text p {
   color: #39a6b2;
   font-size: 18px;
@@ -219,40 +237,9 @@ section {
   color: #024e76;
 }
 
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.step-img img {
-  max-width: 100%
-}
-
-.step-text {
-  flex: 12;
-}
-
-.step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid #39a6b2;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-/* WHAT YOU DO STYLES END */
+/* WHAT YOU DO STYLES*/
 
 /* MEET THE TRAINERS START */
-
-.trainer {
-  margin: 20px;
-  background: #024e76;
-  color: #fce138;
-  flex: 1;
-}
-
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -261,13 +248,20 @@ section {
   justify-content: space-around;
 }
 
+.trainer {
+  margin: 20px;
+  flex: 1;
+  background: #024e76;
+  color: #fce138;
+}
+
 .trainer img {
   width: 100%;
 }
 
 .trainer-bio {
   padding: 25px;
-  width: 65%;
+  line-height: 1.3;
 }
 
 .trainer-bio h3 {
@@ -282,11 +276,10 @@ section {
 
 .trainer-bio p {
   font-size: 17px;
-  line-height: 1.3;
 }
-/* TRAINER STYLES END */
+/* TRAINER END */
 
-/* REACH OUT STYLES START */
+/* REACH OUT START */
 .contact {
   background: #024e76;
 }
@@ -352,9 +345,9 @@ section {
 }
 
 
-/* REACH OUT STYLES END */
+/* REACH OUT END */
 
-/* UTILITIES */
+/* TEXT Utilities */
 .text-left {
   text-align: left;
 }
